@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-08-23T21:20:54Z</date>
+    <date>2019-10-11T02:23:05Z</date>
     <groups>
+        <group>
+            <name>Elastic</name>
+        </group>
         <group>
             <name>Templates</name>
         </group>
@@ -14,18 +17,24 @@
             <description/>
             <groups>
                 <group>
+                    <name>Elastic</name>
+                </group>
+                <group>
                     <name>Templates</name>
                 </group>
             </groups>
             <applications>
                 <application>
-                    <name>Cluster</name>
+                    <name>Elastic-Cluster</name>
                 </application>
                 <application>
-                    <name>Indices</name>
+                    <name>Elastic-Indices</name>
                 </application>
                 <application>
-                    <name>Nodes</name>
+                    <name>Elastic-Nodes</name>
+                </application>
+                <application>
+                    <name>Elastic-View</name>
                 </application>
             </applications>
             <items>
@@ -66,7 +75,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Cluster</name>
+                            <name>Elastic-Cluster</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -109,7 +118,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Cluster</name>
+                            <name>Elastic-Cluster</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -152,7 +161,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Indices</name>
+                            <name>Elastic-Indices</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -195,7 +204,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Indices</name>
+                            <name>Elastic-Indices</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -238,7 +247,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Indices</name>
+                            <name>Elastic-Indices</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -281,7 +290,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Indices</name>
+                            <name>Elastic-Indices</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -324,7 +333,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Indices</name>
+                            <name>Elastic-Indices</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -367,7 +376,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Indices</name>
+                            <name>Elastic-Indices</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -410,7 +419,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Cluster</name>
+                            <name>Elastic-Cluster</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -453,10 +462,55 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Cluster</name>
+                            <name>Elastic-Cluster</name>
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Elasticsearch-head service is running</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>net.tcp.port[,9100]</key>
+                    <delay>30</delay>
+                    <history>7</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Elastic-View</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>Service state</name>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -496,7 +550,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Cluster</name>
+                            <name>Elastic-Cluster</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -539,7 +593,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Cluster</name>
+                            <name>Elastic-Cluster</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -582,7 +636,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Cluster</name>
+                            <name>Elastic-Cluster</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -625,7 +679,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Cluster</name>
+                            <name>Elastic-Cluster</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -668,7 +722,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Cluster</name>
+                            <name>Elastic-Cluster</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -711,10 +765,55 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Cluster</name>
+                            <name>Elastic-Cluster</name>
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Kibana service is running</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>net.tcp.port[,5601]</key>
+                    <delay>30</delay>
+                    <history>7</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Elastic-View</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>Service state</name>
+                    </valuemap>
                     <logtimefmt/>
                 </item>
                 <item>
@@ -754,7 +853,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Cluster</name>
+                            <name>Elastic-Cluster</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -797,7 +896,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Cluster</name>
+                            <name>Elastic-Cluster</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -840,7 +939,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Cluster</name>
+                            <name>Elastic-Cluster</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -883,7 +982,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Cluster</name>
+                            <name>Elastic-Cluster</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -926,7 +1025,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Cluster</name>
+                            <name>Elastic-Cluster</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -969,7 +1068,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Indices</name>
+                            <name>Elastic-Indices</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -1012,7 +1111,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Indices</name>
+                            <name>Elastic-Indices</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -1055,7 +1154,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Indices</name>
+                            <name>Elastic-Indices</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -1098,7 +1197,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Indices</name>
+                            <name>Elastic-Indices</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -1141,7 +1240,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Indices</name>
+                            <name>Elastic-Indices</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -1184,7 +1283,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Indices</name>
+                            <name>Elastic-Indices</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -1227,7 +1326,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Cluster</name>
+                            <name>Elastic-Cluster</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -1270,7 +1369,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Indices</name>
+                            <name>Elastic-Indices</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -1348,7 +1447,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Indices</name>
+                                    <name>Elastic-Indices</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1391,7 +1490,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Indices</name>
+                                    <name>Elastic-Indices</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1472,7 +1571,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1515,7 +1614,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1558,7 +1657,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1601,7 +1700,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1644,7 +1743,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1687,7 +1786,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1730,7 +1829,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1773,7 +1872,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1816,7 +1915,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1859,7 +1958,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1902,7 +2001,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1945,7 +2044,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -1988,7 +2087,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2031,7 +2130,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2074,7 +2173,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2117,7 +2216,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2160,7 +2259,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2203,7 +2302,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2246,7 +2345,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2289,7 +2388,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2332,7 +2431,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2375,7 +2474,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2418,7 +2517,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2461,7 +2560,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2504,7 +2603,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2547,7 +2646,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2590,7 +2689,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2633,7 +2732,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2676,7 +2775,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2719,7 +2818,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2762,7 +2861,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2805,7 +2904,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2848,7 +2947,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -2891,7 +2990,7 @@
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
-                                    <name>Nodes</name>
+                                    <name>Elastic-Nodes</name>
                                 </application>
                             </applications>
                             <valuemap/>
@@ -3252,7 +3351,7 @@
                             <dynamic>0</dynamic>
                             <sort_triggers>0</sort_triggers>
                             <resource>
-                                <name>Cluster Nodes</name>
+                                <name>Elastic Cluster Nodes</name>
                                 <host>Template App ElasticSearch</host>
                             </resource>
                             <max_columns>3</max_columns>
@@ -3274,7 +3373,7 @@
                             <dynamic>0</dynamic>
                             <sort_triggers>0</sort_triggers>
                             <resource>
-                                <name>Doc index rate</name>
+                                <name>Elastic  Doc index rate</name>
                                 <host>Template App ElasticSearch</host>
                             </resource>
                             <max_columns>3</max_columns>
@@ -3296,7 +3395,7 @@
                             <dynamic>0</dynamic>
                             <sort_triggers>0</sort_triggers>
                             <resource>
-                                <name>Field data performance</name>
+                                <name>Elastic  Field data performance</name>
                                 <host>Template App ElasticSearch</host>
                             </resource>
                             <max_columns>3</max_columns>
@@ -3318,7 +3417,7 @@
                             <dynamic>0</dynamic>
                             <sort_triggers>0</sort_triggers>
                             <resource>
-                                <name>Filter cache performance</name>
+                                <name>Elastic Filter cache performance</name>
                                 <host>Template App ElasticSearch</host>
                             </resource>
                             <max_columns>3</max_columns>
@@ -3362,7 +3461,7 @@
                             <dynamic>0</dynamic>
                             <sort_triggers>0</sort_triggers>
                             <resource>
-                                <name>Shard Movement</name>
+                                <name>Elastic Shard Movement</name>
                                 <host>Template App ElasticSearch</host>
                             </resource>
                             <max_columns>3</max_columns>
@@ -3428,7 +3527,7 @@
                             <dynamic>0</dynamic>
                             <sort_triggers>0</sort_triggers>
                             <resource>
-                                <name>Index Operations</name>
+                                <name>Elastic Index Operations</name>
                                 <host>Template App ElasticSearch</host>
                             </resource>
                             <max_columns>3</max_columns>
@@ -3450,7 +3549,7 @@
                             <dynamic>0</dynamic>
                             <sort_triggers>0</sort_triggers>
                             <resource>
-                                <name>Index Latency</name>
+                                <name>Elastic Index Latency</name>
                                 <host>Template App ElasticSearch</host>
                             </resource>
                             <max_columns>3</max_columns>
@@ -3491,6 +3590,16 @@
     </templates>
     <triggers>
         <trigger>
+            <expression>{Template App ElasticSearch:net.tcp.port[,9100].count(#3,0,eq)}&gt;1</expression>
+            <name>Elasticsearch-head is down on {HOST.NAME}</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
             <expression>{Template App ElasticSearch:elastizabbix[health,status].str(red)}=1</expression>
             <name>ElasticSearch Cluster Status is Red</name>
             <url/>
@@ -3511,6 +3620,16 @@
             <dependencies/>
         </trigger>
         <trigger>
+            <expression>{Template App ElasticSearch:net.tcp.port[,5601].count(#3,0,eq)}&gt;1</expression>
+            <name>Kibana service is down on {HOST.NAME}</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
             <expression>{Template App ElasticSearch:elastizabbix[health,unassigned_shards].last()}&gt;0</expression>
             <name>Unassigned Shards</name>
             <url/>
@@ -3523,7 +3642,7 @@
     </triggers>
     <graphs>
         <graph>
-            <name>Cluster Nodes</name>
+            <name>Elastic Cluster Nodes</name>
             <width>900</width>
             <height>200</height>
             <yaxismin>0.0000</yaxismin>
@@ -3567,7 +3686,7 @@
             </graph_items>
         </graph>
         <graph>
-            <name>Doc index rate</name>
+            <name>Elastic  Doc index rate</name>
             <width>900</width>
             <height>200</height>
             <yaxismin>0.0000</yaxismin>
@@ -3599,7 +3718,7 @@
             </graph_items>
         </graph>
         <graph>
-            <name>Field data performance</name>
+            <name>Elastic  Field data performance</name>
             <width>900</width>
             <height>200</height>
             <yaxismin>0.0000</yaxismin>
@@ -3643,7 +3762,7 @@
             </graph_items>
         </graph>
         <graph>
-            <name>Filter cache performance</name>
+            <name>Elastic Filter cache performance</name>
             <width>900</width>
             <height>200</height>
             <yaxismin>0.0000</yaxismin>
@@ -3687,7 +3806,7 @@
             </graph_items>
         </graph>
         <graph>
-            <name>Index Latency</name>
+            <name>Elastic Index Latency</name>
             <width>900</width>
             <height>200</height>
             <yaxismin>0.0000</yaxismin>
@@ -3779,7 +3898,7 @@
             </graph_items>
         </graph>
         <graph>
-            <name>Index Operations</name>
+            <name>Elastic Index Operations</name>
             <width>900</width>
             <height>200</height>
             <yaxismin>0.0000</yaxismin>
@@ -3871,7 +3990,7 @@
             </graph_items>
         </graph>
         <graph>
-            <name>Query Performance</name>
+            <name>Elastic Query Performance</name>
             <width>900</width>
             <height>200</height>
             <yaxismin>0.0000</yaxismin>
@@ -3889,7 +4008,7 @@
             <ymax_item_1>0</ymax_item_1>
             <graph_items>
                 <graph_item>
-                    <sortorder>1</sortorder>
+                    <sortorder>0</sortorder>
                     <drawtype>0</drawtype>
                     <color>C80000</color>
                     <yaxisside>0</yaxisside>
@@ -3903,7 +4022,7 @@
             </graph_items>
         </graph>
         <graph>
-            <name>Shard Movement</name>
+            <name>Elastic Shard Movement</name>
             <width>900</width>
             <height>200</height>
             <yaxismin>0.0000</yaxismin>
